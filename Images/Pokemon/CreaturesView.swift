@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct CreaturesView: View {
+    var creaturesVM = CreaturesViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            NavigationStack{
+                List(creaturesVM.creaturesArray , id: \.self) {
+                    creature in
+                    Text(creature.name)
+                        .font(.title2)
+                }
+                .listStyle(.plain)
+                .navigationTitle("Pokemon")
+            }
+            .task{
+                await creaturesVM.getData()
+            }
+        }
     }
-}
+
 
 struct CreaturesView_Previews: PreviewProvider {
     static var previews: some View {

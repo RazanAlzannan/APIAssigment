@@ -7,15 +7,55 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    @State var selectedIndexTab = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        return VStack {
+            
+            HStack{
+                TabView(selection: $selectedIndexTab) {
+                    
+                    Courses()
+                        .tabItem {
+                            Image(systemName: "house.fill")
+                                .renderingMode(.template)
+                            Text("Courses")
+                            
+                        }.tag(0)
+
+                    CreaturesView()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                                .renderingMode(.template)
+                            Text("Pokemon")
+                        }.tag(1)
+
+
+                    VehicleView()
+                        .tabItem {
+                            Image(systemName: "bell.fill")
+                                .renderingMode(.template)
+                            Text("Vehicles")
+                        }.tag(2)
+//
+//                    CoffeeView()
+//                        .tabItem {
+//                            Image(systemName: "message")
+//                                .renderingMode(.template)
+//                            Text("Messages")
+//                        }.tag(3)
+                    
+                }
+                .accentColor(.blue)
+                .toolbarColorScheme(.light, for: .tabBar)
+                .background(.white).opacity(40.7)
+                
+                
+            }.ignoresSafeArea()
+            
         }
-        .padding()
     }
 }
 
