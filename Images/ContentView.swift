@@ -39,13 +39,20 @@ struct ContentView: View {
                                 .renderingMode(.template)
                             Text("Vehicles")
                         }.tag(2)
-//
+                    
+                    Quotes() .tabItem {
+                        Image(systemName: "bell.fill")
+                            .renderingMode(.template)
+                        Text("Qoutes")
+                    }.tag(3)
+                    
 //                    CoffeeView()
 //                        .tabItem {
 //                            Image(systemName: "message")
 //                                .renderingMode(.template)
 //                            Text("Messages")
-//                        }.tag(3)
+//                        }.tag(4)
+                    
                     
                 }
                 .accentColor(.blue)

@@ -16,6 +16,7 @@
 		EA5D526E2A256902002A852E /* CreaturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D526D2A256902002A852E /* CreaturesViewModel.swift */; };
 		EA5D52702A256917002A852E /* CreaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D526F2A256917002A852E /* CreaturesView.swift */; };
 		EA5D52722A257BF6002A852E /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D52712A257BF6002A852E /* VehicleView.swift */; };
+		EA5D52762A25D22E002A852E /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D52752A25D22E002A852E /* Quotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EA5D526D2A256902002A852E /* CreaturesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesViewModel.swift; sourceTree = "<group>"; };
 		EA5D526F2A256917002A852E /* CreaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesView.swift; sourceTree = "<group>"; };
 		EA5D52712A257BF6002A852E /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		EA5D52752A25D22E002A852E /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EA5D525C2A253F28002A852E /* ContentView.swift */,
 				EA5D52682A255892002A852E /* Courses.swift */,
 				EA5D526A2A255C21002A852E /* Coffee.swift */,
+				EA5D52752A25D22E002A852E /* Quotes.swift */,
 				EA5D526C2A25689F002A852E /* Pokemon */,
 				EA5D525E2A253F2A002A852E /* Assets.xcassets */,
 				EA5D52602A253F2A002A852E /* Preview Content */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5D52762A25D22E002A852E /* Quotes.swift in Sources */,
 				EA5D525D2A253F28002A852E /* ContentView.swift in Sources */,
 				EA5D525B2A253F28002A852E /* ImagesApp.swift in Sources */,
 				EA5D52692A255892002A852E /* Courses.swift in Sources */,
